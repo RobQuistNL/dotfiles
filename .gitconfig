@@ -78,3 +78,6 @@
 
 [push]
 	default = simple
+[user]
+	name = Jeroen van Dijk
+	email = jeroen@enrise.com
