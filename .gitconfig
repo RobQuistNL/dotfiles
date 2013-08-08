@@ -81,3 +81,5 @@
 [user]
 	name = Jeroen van Dijk
 	email = jeroen@enrise.com
+[remote "upstream"]
+	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
