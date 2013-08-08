@@ -25,6 +25,8 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+	pullify = config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'
+	pr = "!pr() { git fetch upstream refs/pull/$1/head:refs/remotes/upstream/pr/$1; git checkout upstream/pr/$1; }; pr"
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -81,5 +83,3 @@
 [user]
 	name = Jeroen van Dijk
 	email = jeroen@enrise.com
-[remote "upstream"]
-	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
