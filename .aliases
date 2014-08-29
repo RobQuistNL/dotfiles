@@ -137,3 +137,5 @@ function mybugon() {
 }
 alias bugon="mybugon"
 alias bugoff="unset QUERY_STRING"
+
+alias hlcode="pbpaste | highlight --syntax=$1 --line-numbers --font-size 20 --font Menlo --style anotherdark -W -J 80 -j 3 -O rtf | pbcopy"
