@@ -26,7 +26,7 @@
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
 	pullify = config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'
-	pr = "!pr() { git remote prune upstream; git fetch upstream refs/pull/$1/head:refs/remotes/upstream/pr/$1; git checkout upstream/pr/$1; }; pr"
+	pr = "!pr() { git remote prune ${2:-upstream}; git fetch ${2:-upstream} refs/pull/$1/head:refs/remotes/${2:-upstream}/pr/$1; git checkout ${2:-upstream}/pr/$1; }; pr"
 
 [apply]
 	# Detect whitespace errors when applying a patch
