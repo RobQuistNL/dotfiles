@@ -1,0 +1,2 @@
+`git config --global user.name "Jeroen van Dijk"`
+`git config --global user.email "jeroen@enrise.com"`
