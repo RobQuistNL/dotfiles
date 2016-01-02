@@ -178,9 +178,4 @@
 
 [url "git://gist.github.com/"]
 
-[user]
-	name = Jeroen van Dijk
-	email = jeroen@enrise.com
-=======
 	insteadOf = "gist:"
->>>>>>> master
